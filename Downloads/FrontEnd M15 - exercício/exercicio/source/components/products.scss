@@ -1,0 +1,31 @@
+@use '../settings/var.scss';
+@use 'sass:color';
+
+.products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+  img {
+      width: 100%;
+      border-radius: 16px;
+  }
+}
+
+
+
+.product-button {
+  display: block;
+  background-color: var.$corSecundaria;
+  color: var.$b1;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+  &:hover {
+      background-color: color.scale(var.$corSecundaria, $lightness: -30%);
+  }
+}

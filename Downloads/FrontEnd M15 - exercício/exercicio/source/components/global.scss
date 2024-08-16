@@ -1,0 +1,20 @@
+@use '../settings/var.scss';
+
+body {
+  background-color: var.$corFundo;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+section {
+  padding: 56px 0;
+}
